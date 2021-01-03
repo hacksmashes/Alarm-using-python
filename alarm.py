@@ -3,7 +3,7 @@ import winsound
 from win10toast import ToastNotifier
 
 timing=input("Enter time in ( Hours:Minutes ) \n use 24hrs format = ")
-message=input("Type the purpose of the alarm = ")
+message=input("Type the purpose of the alarm : ")
 
 while True:
     current_time=datetime.datetime.now()
@@ -14,5 +14,3 @@ while True:
         winsound.Beep(frequency=200,duration=1000)
         notification.show_toast("Alarm",message,duration=50)
         break
-    
-
